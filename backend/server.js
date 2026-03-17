@@ -48,7 +48,7 @@ app.get("/api/marvel/aleatorio", (req, res) => {
 
     res.json({
         status: "success",
-        imagem: `http://10.106.208.39:${PORT}/fotos/${item}`
+        imagem: `http://10.106.208.40:${PORT}/fotos/${item}`
     });
 
 });
@@ -74,7 +74,7 @@ app.get("/api/marvel/:personagem", (req, res) => {
 
     res.json({
         status: "success",
-        imagem: `http://10.106.208.39:${PORT}/fotos/${item}`
+        imagem: `http://10.106.208.40:${PORT}/fotos/${item}`
     });
 
 });
@@ -86,6 +86,6 @@ app.get("/api/marvel/:personagem", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
 
     console.log("Servidor Marvel rodando!");
-    console.log(`http://10.106.208.39:${PORT}/api/marvel/aleatorio`);
+    console.log(`http://10.106.208.40:${PORT}/api/marvel/aleatorio`);
 
 });
